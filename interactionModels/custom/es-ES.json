@@ -1,0 +1,613 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "mi ruta diaria",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "RegisterBasicRouteIntent",
+          "slots": [
+            {
+              "name": "home",
+              "type": "busStop",
+              "samples": [
+                "la ubicación de la de mi casa es {home}",
+                "la ubicación de la de casa es {home}",
+                "parada de casa es {home}",
+                "la {home}",
+                "{home}",
+                "la parada de casa es {home}",
+                "la ubicación de la parada más cercana de mi casa es {home}"
+              ]
+            },
+            {
+              "name": "work",
+              "type": "busStop",
+              "samples": [
+                "la {work}",
+                "{work}",
+                "la parada es {work}",
+                "la parada de mi trabajo es {work}",
+                "la parada de trabajo es {work}",
+                "la ubicación de la para más cercana de mi trabajo es {work}",
+                "parada de trabajo es {work}"
+              ]
+            },
+            {
+              "name": "busHomeWork",
+              "type": "busHomeWorkLine",
+              "samples": [
+                "{busHomeWork}",
+                "Casa trabajo bus {busHomeWork}",
+                "Normalmente cojo la línea de bus {busHomeWork}",
+                "Cogo el bus {busHomeWork} de casa al trabajo",
+                "Cogo el bus {busHomeWork} de trabajo a casa"
+              ]
+            }
+          ],
+          "samples": [
+            "registra ruta habitual",
+            "registrar ruta habitual",
+            "registra la ubicación del trabajo como {work}",
+            "registra la ubicación de casa como {home}",
+            "guarda la ubicación de casa como {home}",
+            "añade la ubicación de casa como {home}",
+            "añadir casa y trabajo",
+            "añadir un sitio",
+            "añadir localizacion",
+            "añadir sitio",
+            "añadir ubicacion",
+            "puntos de partida",
+            "lugares guardados",
+            "ubicaciones guardadas",
+            "sitios guardados",
+            "mis sitios añadidos",
+            "mis lugares añadidos",
+            "mis puntos de partida",
+            "mis lugares guardados",
+            "mis sitios guardados"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "RegisterAdditionalRouteIntent",
+          "slots": [],
+          "samples": [
+            "registrar ruta adicional",
+            "añadir otro sitio",
+            "añadir otro sitio adicional",
+            "añadir un sitio adicional"
+          ]
+        },
+        {
+          "name": "ConsultTimeIntent",
+          "slots": [
+            {
+              "name": "origen",
+              "type": "busStop",
+              "samples": [
+                "la ruta es desde casa hasta el trabajo",
+                "es la parada de mi casa",
+                "es la parada de casa",
+                "parada de casa",
+                "Casa",
+                "Confirmo que la parada de origen es casa"
+              ]
+            }
+          ],
+          "samples": [
+            "quiero consultar el tiempo hasta mi autobus",
+            "quiero consultar el tiempo hasta mi bus",
+            "consulta el tiempo hasta mi bus",
+            "consulta el tiempo hasta mi autobus",
+            "tiempo hasta el autobus",
+            "cuando llegará mi ",
+            "cuando llegará mi autobus",
+            "cuando llega el bus",
+            "cuando llega mi bus"
+          ]
+        },
+        {
+          "name": "ReminderIntent",
+          "slots": [],
+          "samples": [
+            "pon un recordatorio",
+            "pon recordatorio"
+          ]
+        },
+        {
+          "name": "TimerIntent",
+          "slots": [
+            {
+              "name": "minute",
+              "type": "AMAZON.DURATION"
+            }
+          ],
+          "samples": [
+            "avisame con anterioridad de {minute} ",
+            "Avisame {minute} antes de que pase el autobus",
+            "temporizador cada {minute} ",
+            "programar un temporizador cada {minute} ",
+            "poner un temporizador cada {minute}",
+            "programa un temporizador cada {minute}",
+            "pon un temporizador cada {minute} "
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "3472",
+              "name": {
+                "value": "Av Remolar  Ronda Sud",
+                "synonyms": [
+                  "Remolar Ronda Sur",
+                  "Remolar Ronda Sud",
+                  "Avenida Remolar Ronda Sur",
+                  "Avenida Remolar Ronda Sud",
+                  "Avenguda Remolar Ronda Sud",
+                  "3472"
+                ]
+              }
+            },
+            {
+              "id": "585",
+              "name": {
+                "value": "Avenida Remolar Riu Guadalquivir",
+                "synonyms": [
+                  "585",
+                  "Avenguda Remolar  Rio Guadalquivir",
+                  "Avenida Remolar  Rio Guadalquivir",
+                  "Av Remolar  Rio Guadalquivir",
+                  "Avenida Remolar  Riu Guadalquivir"
+                ]
+              }
+            },
+            {
+              "id": "1043",
+              "name": {
+                "value": "Avenida Remolar  Avenida Onze de setembre",
+                "synonyms": [
+                  "Av Remolar Av Once de Septiembre",
+                  "Avenida Remolar Avenida Once de Septiembre",
+                  "Av Onze de setembre",
+                  "Av Remolar Av Onze de setembre",
+                  "1043"
+                ]
+              }
+            },
+            {
+              "id": "1153",
+              "name": {
+                "value": "Pl Catalunya",
+                "synonyms": [
+                  "Plaza Catalunya",
+                  "Plaza Cataluña",
+                  "1153"
+                ]
+              }
+            },
+            {
+              "id": "3441",
+              "name": {
+                "value": "Lleida Coronel Sanfeliu",
+                "synonyms": [
+                  "3441"
+                ]
+              }
+            },
+            {
+              "id": "1016",
+              "name": {
+                "value": "Av Verge de Montserrat Castella",
+                "synonyms": [
+                  "1016",
+                  "Avenida Verge de Montserrat Castella"
+                ]
+              }
+            },
+            {
+              "id": "1015",
+              "name": {
+                "value": "Av Verge de Montserrat Ctra de la Marina",
+                "synonyms": [
+                  "Avenida Verge de Montserrat Carretera de la Marina",
+                  "Avenida Verge de Montserrat Ctra de la Marina",
+                  "Av Verge de Montserrat Carretera de la Marina",
+                  "1015"
+                ]
+              }
+            },
+            {
+              "id": "3300",
+              "name": {
+                "value": "Ctra de la Marina Lo Gaiter del Llobregat",
+                "synonyms": [
+                  "3300",
+                  "Carretera de la Marina Lo Gaiter del Llobregat",
+                  "Ctra de la Marina - Lo Gaiter del Llobregat"
+                ]
+              }
+            },
+            {
+              "id": "3301",
+              "name": {
+                "value": "Lo Gaiter del Llobregat Les Moreres",
+                "synonyms": [
+                  "Lo Gaiter del Llobregat - Les Moreres",
+                  "3301"
+                ]
+              }
+            },
+            {
+              "id": "3491",
+              "name": {
+                "value": "Les Moreres Av Josep Anselm Clavé",
+                "synonyms": [
+                  "3491",
+                  "Les Moreres - Avenida Josep Anselm Clavé",
+                  "Les Moreres - Av Josep Anselm Clavé"
+                ]
+              }
+            },
+            {
+              "id": "895",
+              "name": {
+                "value": "La Campana",
+                "synonyms": [
+                  "895"
+                ]
+              }
+            },
+            {
+              "id": "907",
+              "name": {
+                "value": "Gran Via  Moianès",
+                "synonyms": [
+                  "907",
+                  "Gran Via  Moianes"
+                ]
+              }
+            },
+            {
+              "id": "421",
+              "name": {
+                "value": "Gran Via Farell",
+                "synonyms": [
+                  "421",
+                  "Gran Via - Farell"
+                ]
+              }
+            },
+            {
+              "id": "108",
+              "name": {
+                "value": "Plaza España FGC",
+                "synonyms": [
+                  "pl españa fgc",
+                  "108",
+                  "plaza espanya fgc"
+                ]
+              }
+            },
+            {
+              "id": "1185",
+              "name": {
+                "value": "Parallel Avenida Mistral",
+                "synonyms": [
+                  "parallel av mistral",
+                  "Parallel Mistral",
+                  "1185"
+                ]
+              }
+            },
+            {
+              "id": "1062",
+              "name": {
+                "value": "Avenida Parallel Lleida",
+                "synonyms": [
+                  "Av Parallel Lleida",
+                  "Parallel Lleida",
+                  "1062"
+                ]
+              }
+            }
+          ],
+          "name": "busStop"
+        },
+        {
+          "values": [
+            {
+              "id": "150",
+              "name": {
+                "value": "Pl. Espanya / Castell de Montjuïc",
+                "synonyms": [
+                  "Pl. España Castell de Montjuïc",
+                  "Plaza Espanya  Castell de Montjuïc",
+                  "Pl. Espanya  Castell de Montjuïc",
+                  "150"
+                ]
+              }
+            },
+            {
+              "id": "65",
+              "name": {
+                "value": "Pl. Espanya / El Prat",
+                "synonyms": [
+                  "Plaça Espanya / El Prat",
+                  "65",
+                  "Plaza España el Prat",
+                  "Plaza España Prat",
+                  "Pl. Espanya El Prat"
+                ]
+              }
+            },
+            {
+              "id": "D40",
+              "name": {
+                "value": "Pl. Espanya / Via Favència",
+                "synonyms": [
+                  "D40",
+                  "Plaza Espanya Via Favència",
+                  "Plaza Espanya / Via Favència",
+                  "Pl. Espanya Via Favència"
+                ]
+              }
+            },
+            {
+              "id": "D20",
+              "name": {
+                "value": "Pg. Marítim / Ernest Lluch",
+                "synonyms": [
+                  "Passeig Marítim Ernest Lluch",
+                  "Passeig Marítim / Ernest Lluch",
+                  "Pg. Marítim Ernest Lluch",
+                  "D20"
+                ]
+              }
+            },
+            {
+              "id": "H16",
+              "name": {
+                "value": "Pg. Zona Franca / Fòrum Campus Besòs",
+                "synonyms": [
+                  "H16",
+                  "Passeig Zona Franca Fòrum Campus Besòs",
+                  "Passeig Zona Franca / Fòrum Campus Besòs",
+                  "Pg. Zona Franca Fòrum Campus Besòs"
+                ]
+              }
+            },
+            {
+              "id": "H12",
+              "name": {
+                "value": "Gornal / Besòs Verneda",
+                "synonyms": [
+                  "Gornal Besòs Verneda",
+                  "H12"
+                ]
+              }
+            },
+            {
+              "id": "165",
+              "name": {
+                "value": "Prat Exprés",
+                "synonyms": [
+                  "165",
+                  "Prat Express",
+                  "Prat Expres",
+                  "Prat Expréss"
+                ]
+              }
+            }
+          ],
+          "name": "busHomeWorkLine"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "RegisterBasicRouteIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.573826140121"
+          },
+          "slots": [
+            {
+              "name": "home",
+              "type": "busStop",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.573826140121.298101516324"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.573826140121.298101516324.1546317923283"
+                }
+              ]
+            },
+            {
+              "name": "work",
+              "type": "busStop",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.573826140121.744517363659"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.573826140121.744517363659.1188519005770"
+                }
+              ]
+            },
+            {
+              "name": "busHomeWork",
+              "type": "busHomeWorkLine",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.573826140121.14988771852"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.573826140121.14988771852.934009568016"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ConsultTimeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "origen",
+              "type": "busStop",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1425850790664.1229105625901"
+              }
+            }
+          ]
+        },
+        {
+          "name": "TimerIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "minute",
+              "type": "AMAZON.DURATION",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.573826140121.298101516324",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Has añadido la ubicación de la parada del bus de tu trabajo como {work} , ahora registra la parada de tu casa?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Registra la ubicación de la parada mas cercana de tu casa"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.573826140121.298101516324.1546317923283",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "No tengo registros sobre esta parada, inténtalo otra vez o comprueba la información de la parada"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.573826140121.14988771852.934009568016",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "No tengo registros sobre esta línea de autobus, inténtalo otra vez "
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.573826140121.14988771852",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Qué autobus coges de {home} a {work}"
+          },
+          {
+            "type": "PlainText",
+            "value": "Qué autobus coges de casa hasta tu trabajo?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Registra el autobus que coges habitualmente"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.573826140121.744517363659",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Has añadido la ubicación de la parada del bus de tu casa como {home} , ahora registra la parada de tu trabajo"
+          },
+          {
+            "type": "PlainText",
+            "value": "Registra la ubicación de la parada más cercana de tu trabajo"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.573826140121",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Confirma que habitualmente coges el autobús {busHomeWork}  para la ruta entre {home} y {work} ?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.573826140121.744517363659.1188519005770",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "No tengo registros sobre esta parada, inténtalo otra vez o comprueba la información de la parada"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1425850790664.1229105625901",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Por favor, confirma si el origen es la parada de  casa o parada del trabajo?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.662669180763",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Por favor, confirma si el origen es la parada de  casa o parada del trabajo?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "21"
+}
